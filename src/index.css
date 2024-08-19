@@ -67,3 +67,18 @@
     @apply bg-background text-foreground;
   }
 }
+@layer utilities {
+  .gradient-text {
+    color: #b124c9;
+    background-image: radial-gradient(
+      ellipse,
+      #b124c9 28%,
+      #ff7573 89%,
+      #0f090c 13%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+}
