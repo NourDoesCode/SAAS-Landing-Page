@@ -2,13 +2,34 @@ import { useState } from "react";
 import CompanyLogo from "../assets/SaaslogoResized.png";
 import { Button } from "./ui/Button";
 import { Menu, X } from "lucide-react";
+import { useMotionValueEvent, useScroll } from "framer-motion";
 
 function Header() {
   const [isDropdowOpen, setIsDropdowOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  const { scrollY } = useScroll();
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    console.log("Page scroll: ", latest);
+    if (latest > 0 && !scrolled) {
+      setScrolled(true);
+    } else if (latest === 0 && scrolled) {
+      setScrolled(false);
+    }
+  });
+  {
+    /*Some custom classes */
+  }
+  const defaultClasses = "transition-all absolute inset-0 -z-1";
+  let navBarClasses = scrolled
+    ? `${defaultClasses} border-b border-black/10 bg-white/75 backdrop-blur-md  `
+    : `${defaultClasses} bg-transparent`;
 
   return (
     <section className="sticky top-0 inset-x-0 w-full z-30">
-      <div className="container  ">
+      <div className={navBarClasses}></div>
+      <div className="container relative ">
         <div className="flex justify-between items-center">
           {/* Company Logo */}
           <div className="flex-1">
