@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import RoadmapSection from "./components/RoadmapSection";
 import Slider from "./components/Slider";
 import { partners } from "./data/partners";
 
@@ -23,6 +24,7 @@ function App() {
         <Header />
         <Hero />
         <Slider images={partners} />
+        <RoadmapSection />
       </div>
     </>
   );

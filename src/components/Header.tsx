@@ -42,7 +42,7 @@ function Header() {
             </a>
           </div>
           {/* Middle Navbar */}
-          <nav className="hidden md:flex-1 md:flex justify-center gap-4 lg:gap-7 border-4 border-red-600">
+          <nav className="hidden md:flex-1 md:flex justify-center gap-4 lg:gap-7 ">
             <Button
               variant="linkHover2"
               className="text-gray-600 hover:text-black transition duration-200"
