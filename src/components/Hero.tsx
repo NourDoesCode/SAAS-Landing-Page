@@ -1,6 +1,7 @@
 import { ChevronRight } from "lucide-react";
-import { Button } from "./ui/button";
+import { Button } from "./ui/Button";
 import graphImage from "../assets/graphScale.png";
+import { motion } from "framer-motion";
 
 function Hero() {
   return (
@@ -35,7 +36,6 @@ function Hero() {
             alt="graphs"
             className="md:max-h-[500px] max-h-[350px]"
           />
-          <div className="h-[1000px]">hello</div>
         </div>
       </div>
     </section>

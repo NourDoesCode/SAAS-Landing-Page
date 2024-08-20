@@ -8,7 +8,7 @@ function Header() {
 
   return (
     <section className="sticky top-0 inset-x-0 w-full z-30">
-      <div className="container  border-green-600 border-4">
+      <div className="container  ">
         <div className="flex justify-between items-center">
           {/* Company Logo */}
           <div className="flex-1">

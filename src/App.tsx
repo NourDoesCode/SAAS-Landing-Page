@@ -1,5 +1,7 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import Slider from "./components/Slider";
+import { partners } from "./data/partners";
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
       <div className="relative z-20">
         <Header />
         <Hero />
+        <Slider images={partners} />
       </div>
     </>
   );
