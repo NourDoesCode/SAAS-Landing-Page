@@ -1,7 +1,9 @@
+import Features from "./components/Features";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import RoadmapSection from "./components/RoadmapSection";
 import Slider from "./components/Slider";
+import Testimonials from "./components/Testimonials";
 import { partners } from "./data/partners";
 
 function App() {
@@ -25,6 +27,8 @@ function App() {
         <Hero />
         <Slider images={partners} />
         <RoadmapSection />
+        <Features />
+        <Testimonials />
       </div>
     </>
   );
