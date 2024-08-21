@@ -1,5 +1,4 @@
 import { testimonials } from "@/data/testimonialsData";
-import React from "react";
 
 function Testimonials() {
   return (

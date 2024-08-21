@@ -1,4 +1,3 @@
-import React from "react";
 import MileStone from "./MileStone";
 
 const roadmap = [

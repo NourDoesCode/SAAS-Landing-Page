@@ -1,6 +1,3 @@
-import { Divide } from "lucide-react";
-import React from "react";
-
 type MilestoneProps = {
   title: string;
   description: string;

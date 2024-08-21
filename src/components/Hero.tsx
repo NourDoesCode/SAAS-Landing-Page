@@ -1,7 +1,6 @@
 import { ChevronRight } from "lucide-react";
 import { Button } from "./ui/Button";
 import graphImage from "../assets/graphScale.png";
-import { motion } from "framer-motion";
 
 function Hero() {
   return (

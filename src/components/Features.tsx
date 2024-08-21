@@ -1,5 +1,4 @@
 import { featuresData } from "@/data/featuresData";
-import React from "react";
 
 function Features() {
   return (

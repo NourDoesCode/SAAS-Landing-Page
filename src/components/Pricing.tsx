@@ -1,5 +1,5 @@
 import { BadgeCheck } from "lucide-react";
-import React from "react";
+
 import { Button } from "./ui/Button";
 
 function Pricing() {
